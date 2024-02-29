@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостійна робота 1</title>
+    <title>Заголовок сторінки</title>
+    <link rel="icon" type="image/x-icon" href="/img/ico.ico">
+</head>
+<body>
+ <h1>Мій перший заголовок</h1>
+ <p>Мій перший параграф</p>
+ <h2>Це заголовок 2</h2>
+ <h3>Це заголовк 3</h3>
+ <p>Це параграф<br> з обривом рядка.</p>
+ <a id="Button" href="https://www.google.com.ua/">Це посилання на Гугл</a>
+  <p style="color: green;">Це картинка її розмір 300 на 200 </p><img src="/img/foto.jpg" width="300" height="200" alt="Це картинка">
+  <p title='Я виринаюча підказка'>
+    Це параграф з підсказкою
+ </p>
+ <p>Це попередньо відформатований текст</p>
+ <pre>
+    І ось ідем у бою життєвому.
+  
+    Міцні, тверді, незламні мов граніт,
+  
+    Бо плач не дав свободи ще нікому,
+  
+    А хто борець, той здобуває світ.
+  </pre>
+  <style>
+      #Button {
+      background-color: #f44336;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: red;
+    }
+    </style>
+    
+
+
+
+    <p>Це посилання відкриється в новому вікні</p><a id="Button" href="https://www.google.com.ua/" target="_blank">Відвідайте Гугл!</a>
+    <h2 id="C4">Розділ 4</h2>
+    <a href="#C4" >Перейти до розділу 4</a>
+    <p><img src="img/foto.jpg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        Зображення буде плавати праворуч від тексту.</p>
+        <p><img src="img/foto.jpg" alt="Smiley face" style="float:left;width:42px;height:42px;">
+            Зображення буде плавати ліворуч від тексту.</p> 
+            
+    <style>
+        table {
+          width:100%;
+        }
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+        table#t01 tr:nth-child(even) {
+          background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+         background-color: #fff;
+        }
+        table#t01 th {
+          background-color: black;
+          color: white;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Стилізація таблиць</h2>
+        
+        <table>
+          <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Вік</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+        <br>
+        
+        <table id="t01">
+          <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Вік</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+        
+        </body>
+        </html>
+        <style>
+            
+            #ul1 {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            #li1 {
+              float: left;
+            }
+            
+            #li1 a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 16px;
+              text-decoration: none;
+            }
+            
+            #li1 a:hover {
+              background-color: #111;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Навігаційне меню</h2>
+            <p>В цьому прикладі ми використовуємо CSS для стилізації списку по горизонталі, щоб створити меню навігації:</p>
+            
+            <ul id="ul1"> 
+              <li id="li1"><a id="#Menu" href="#home">Home</a></li>
+              <li id="li1"><a id="#Menu" href="#news">News</a></li>
+              <li id="li1"><a id="#Menu" href="#contact">Contact</a></li>
+              <li id="li1"><a id="#Menu" href="#about">About</a></li>
+            </ul>
+            
+            <h2>Невпорядкований список з круглими маркерами</h2>
+            <ul style="list-style-type:circle;">
+              <li>Кава</li>
+              <li>Чай</li>
+              <li>Молоко</li>
+            </ul>
+            
+            <h2>Впорядкований список HTML</h2>
+            <ol>
+              <li>Кава</li>
+              <li>Чай</li>
+              <li>Молоко</li>
+            </ol>
+            
+            <h2>Впорядкований список із заглавними літерами</h2>
+<ol type="A">
+  <li>Уроки HTML</li>
+  <li>Уроки CSS</li>
+  <li>Уроки JavaScript</li>
+</ol>
+<h2>Вкладений список</h2>
+<p>Список може бути вкладеним (списки всередині списків):</p>
+
+<ul>
+  <li>Кава</li>
+  <li>Чай
+    <ul>
+      <li>Чорний чай</li>
+      <li>Зелений чай</li>
+    </ul>
+  </li>
+  <li>Молоко</li>
+</ul>
+
+              <h2>HTML форми</h2>
+
+              <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <fieldset>
+                  <legend>Персональна інформація:</legend>
+                  Ім'я:<br>
+                  <input type="text" name="firstname" value="Mickey">
+                  <br>
+                  Прізвище:<br>
+                  <input type="text" name="lastname" value="Mouse">
+                  <br><br>
+                  <input type="submit" value="Відправити">
+                </fieldset>
+              </form>
+              <h2>Елемент select</h2>
+<p>Елемент select визначає список, що розкривається:</p>
+
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    <option value="peugeot">Peugeot</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+<h2>Елемент button</h2>
+
+<button type="button" onclick="alert('Слава Україні!')">Тицни мене!</button>
+<h2>Елемент datalist</h2>
+<p>Елемент datalist визначає список зумовлених опцій для елемента input.</p>
+
+<form action="https://www.w3schools.com/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+<h2>Елемент output</h2>
+<p>Елемент output представляє результат розрахунку.</p>
+
+<form action="https://www.w3schools.com/action_page.php" target="_blank"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<h2>Прапорці</h2>
+<p>Значення <strong>input type="checkbox"</strong> визначає прапорці (чекбокси):</p>
+
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+<input type="checkbox" name="vehicle1" value="Bike">у мене є велосипед
+<br>
+<input type="checkbox" name="vehicle2" value="Car">у мене є автомобіль
+<br><br>
+<input type="submit">
+</form>
+<h2>Радіо кнопки</h2>
+<p><strong>input type="radio"</strong> визначає радіо кнопку:</p>
+
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+  <input type="radio" name="gender" value="male" checked> Чоловік<br>
+  <input type="radio" name="gender" value="female"> Жінка<br>
+  <input type="radio" name="gender" value="other"> Щось таке<br><br>
+  <input type="submit">
+</form>
+<h2>Атрибут formtarget</h2>
+<p>Атрибут formtarget вказує ім'я або ключове слово, яке вказує, де відображати відповідь, отриману після відправки форми.</p>
+
+<form action="https://www.w3schools.com/action_page.php">
+  Ім'я: <input type="text" name="fname"><br>
+  Прізвище: <input type="text" name="lname"><br>
+  <input type="submit" value="Відправити як зазвичай">
+  <input type="submit" formtarget="_blank" value="Відправити в новому вікні/вкладці">
+</form>
+<h2>Атрибут formnovalidate</h2>
+
+<form action="https://www.w3schools.com/action_page.php">
+  E-mail: <input type="email" name="userid"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formnovalidate value="Submit without validation">
+</form>
+<h1 style="color:blue;">Синій заголовок</h1>
+
+<p style="color:red;">Червоний параграф.</p>
+<h2>Зображення на іншому сервері</h2>
+
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools" style="width:104px;height:142px;">
+
+<style>
+    .flex-container {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .flex-container > * {
+      padding: 10px;
+      flex: 1 100%;
+    }
+    
+    .main {
+      text-align: left;
+      background: cornflowerblue;
+    }
+    
+    .header {background: coral;}
+    .footer {background: lightgreen;}
+    .aside1 {background: moccasin;}
+    .aside2 {background: violet;}
+    
+    @media all and (min-width: 768px) {
+      .aside { flex: 1 auto; }
+      .main    { flex: 3 0px; }
+      .aside1 { order: 1; }
+      .main    { order: 2; }
+      .aside2 { order: 3; }
+      .footer  { order: 4; }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="flex-container">
+      <header class="header">Header</header>
+      <aside class="aside aside1">Aside 1</aside>
+      <article class="main">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+      </article>
+      <aside class="aside aside2">Aside 2</aside>
+      <footer class="footer">Footer</footer>
+    </div>
+    <body>
+
+        <h2>Елемент code</h2>
+        <p>Приклад коду програмування:</p>
+      
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        <p>Елемент code не зберігає пробіли і розриви рядків.</p>
+        <p>Щоб виправити це, ви можете помістити елемент коду в елемент pre:</p>
+        
+        <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        </pre>
+</body>
+</html>
