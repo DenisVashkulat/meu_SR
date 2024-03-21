@@ -6,9 +6,54 @@
     <title>Самостійна робота 1</title>
     <title>Заголовок сторінки</title>
     <link rel="icon" type="image/x-icon" href="img/ico.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
 </head>
 <body>
+  <style>
+    /* Стили для меню */
+    ul#menusele {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li#menusele2 {
+        float: left;
+    }
+
+    li a#menusele3 {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+       
+    }
+
+    li a:hover.menuhover {
+        background-color: #111;
+    }
+
+    /* Стили для разделов */
+    section#menusele5 {
+        margin: 20px;
+        padding: 20px;
+        background-color: #F0F0F0;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+
+<ul id="menusele">
+<li id="menusele2"><a class="menuhover" id="menusele3" href="#samostiyna1">Самостійна робота 1</a></li>
+<li id="menusele2"><a class="menuhover" id="menusele3" href="#samostiyna2">Самостійна робота 2</a></li>
+<li id="menusele2"><a class="menuhover" id="menusele3" href="#samostiyna2.2">Самостійна робота 2.2</a></li>
+</ul>
+<section id="samostiyna1"></section>
   <h2>Самостійна робота 1</h2>
   <fieldset>
  <h1>Мій перший заголовок</h1>
@@ -343,6 +388,7 @@ oninput="x.value=parseInt(a.value)+parseInt(b.value)">
   <input type="submit" formnovalidate value="Submit without validation">
 </form>
 </fieldset>
+<section id="samostiyna2"></section>
 <H2>Самостійна робота 2</H2>
 <fieldset>
   <legend>1.1. CSS Синтаксис</legend>
@@ -2355,8 +2401,7 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
         writing-mode: vertical-rl; 
       }
       </style>
-      </head>
-      <body>
+      
       <h1>The writing-mode Property</h1>
       
       <p class="test11">Some text with default writing-mode.</p>
@@ -2387,5 +2432,1166 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
       <div class="test23" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
   </fieldset>
 </fieldset>
+<section id="samostiyna2.2"></section>
+<h2 style="font-weight: 900;">Самостійна робота 2.2</h2>
+<fieldset>
+<legend>1.1. CSS Контур</legend>
+  <fieldset>
+    <style>
+      p {outline-color:red;}
+      
+      p.dotted {outline-style: dotted;}
+      p.dashed {outline-style: dashed;}
+      p.solid {outline-style: solid;}
+      p.double {outline-style: double;}
+      p.groove {outline-style: groove;}
+      p.ridge {outline-style: ridge;}
+      p.inset {outline-style: inset;}
+      p.outset {outline-style: outset;}
+      </style>
+      </head>
+      <body>
+      
+      <h2>Свойство outline-style</h2>
+      
+      <p class="dotted">Точечный контур</p>
+      <p class="dashed">Пунктирный контур</p>
+      <p class="solid">Сплошной контур</p>
+      <p class="double">Двойной контур</p>
+      <p class="groove">Рифленый контур. Эффект зависит от значения цвета контура.</p>
+      <p class="ridge">Ребристый контур. Эффект зависит от значения цвета контура.</p>
+      <p class="inset">Внутренний контур. Эффект зависит от значения цвета контура.</p>
+      <p class="outset">Наружный контур. Эффект зависит от значения цвета контура.</p>
+  </fieldset>
+</fieldset>
+<fieldset>
+  <legend>1.1.1. CSS Ширина контуру</legend>
+    <fieldset>
+      <style>
+        p.ex1 {
+          border: 1px solid black;
+          outline-style: solid;
+          outline-color: red;
+          outline-width: thin;
+        }
+        
+        p.ex2 {
+          border: 1px solid black;
+          outline-style: solid;
+          outline-color: red;
+          outline-width: medium;
+        }
+        
+        p.ex3 {
+          border: 1px solid black;
+          outline-style: solid;
+          outline-color: red;
+          outline-width: thick;
+        }
+        
+        p.ex4 {
+          border: 1px solid black;
+          outline-style: solid;
+          outline-color: red;
+          outline-width: 4px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Свойство outline-width</h2>
+        
+        <p class="ex1">Тонкий контур.</p>
+        <p class="ex2">Средний контур.</p>
+        <p class="ex3">Толстый контур.</p>
+        <p class="ex4">Контур толщиной в 4px.</p>
+    </fieldset>
+  </fieldset>
+  <fieldset>
+    <legend>1.1.2. CSS Колір контуру</legend>
+      <fieldset>
+        <style>
+          p.ex11 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: red;
+          }
+          
+          p.ex22 {
+            border: 2px solid black;
+            outline-style: dotted;
+            outline-color: blue;
+          }
+          
+          p.ex33 {
+            border: 2px solid black;
+            outline-style: outset;
+            outline-color: grey;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h2>Свойство outline-color</h2>
+          <p>Свойство outline-color используется для установки цвета контура.</p>
+          
+          <p class="ex11">Сплошной красный контур.</p>
+          <p class="ex22">Точечный синий контур.</p>
+          <p class="ex33">Наружный серый контур.</p>
+          
+      </fieldset>
+    </fieldset>
+    <fieldset>
+      <legend>1.1.3. CSS Скорочена властивість контуру</legend>
+        <fieldset>
+          <style>
+            p.ex111 {outline: dashed;}
+            p.ex222 {outline: dotted red;}
+            p.ex333 {outline: 5px solid yellow;}
+            p.ex444 {outline: thick ridge pink;}
+            </style>
+            </head>
+            <body>
+            
+            <h2>Свойство outline</h2>
+            
+            <p class="ex111">Пунктирный контур.</p>
+            <p class="ex222">Точечный красный контур.</p>
+            <p class="ex333">Сплошной 5px желтый контур.</p>
+            <p class="ex444">Толстый ребристый розовый контур.</p>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>1.1.4. CSS Outline Offset</legend>
+          <fieldset>
+            <style>
+              p.sr {
+                margin: 30px;
+                background:yellow;
+                border: 1px solid black;
+                outline: 1px solid red;
+                outline-offset: 15px;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <h2>Свойство outline-offset</h2>
+              
+              <p class="sr">Контур этого параграфа составляет 15 пикселей за пределами границы.</p>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>1.2. CSS Текст</legend>
+            <fieldset>
+              <style>
+                div.sr {
+                  border: 1px solid gray;
+                  padding: 8px;
+                }
+                
+                h1.sr1 {
+                  text-align: center;
+                  text-transform: uppercase;
+                  color: #4CAF50;
+                }
+                
+                p.sr2 {
+                  text-indent: 50px;
+                  text-align: justify;
+                  letter-spacing: 3px;
+                }
+                
+                a.sr3 {
+                  text-decoration: none;
+                  color: #008CBA;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <div class="sr">
+                  <h1 class="sr1">форматирование текста</h1>
+                  <p class="sr2">Этот текст оформлен с использованием некоторых свойств форматирования текста. Заголовок использует свойства text-align, text-transform и color. Параграф с отступом, выравнивается, а расстояние между символами указывается. Подчеркивание удалено с этой цветной ссылки <a class="sr3" target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself" </a> link.</p>
+                </div>
+                
+            </fieldset>
+          </fieldset>
+          <fieldset>
+            <legend>1.2.1. CSS Вирівнювання тексту.</legend>
+              <fieldset>
+                <style>
+                  div.sr121 {
+                    border: 1px solid black;
+                    padding: 10px;
+                    width: 200px;
+                    height: 200px;
+                    text-align: justify;
+                  }
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <h1>Пример text-align: justify;</h1>
+                  
+                  <p>text-align: justify; значение растягивает линии так, чтобы каждая линия имела одинаковую ширину (как в газетах и журналах).</p>
+                  
+                  <div class="sr121">
+                  In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+                  </div>
+              </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend>1.2.2. CSS Оформлення тексту.</legend>
+                <fieldset>
+              <style>
+                h1.csso {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h2.csso1 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+h3.csso2 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+p.csso3 {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+              </style>
+              <h1 class="csso">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium sequi quibusdam nesciunt ad, distinctio ratione minus expedita dignissimos dolorem, illo magni! Voluptas nesciunt autem ipsa molestiae aut nam eum?q</h1>
+              <h2 class="csso1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In error numquam a possimus eum suscipit voluptatum quia facilis maiores, et magni voluptatibus laborum quas natus nam voluptatem iste necessitatibus mollitia!</h2>  
+              <h3 class="csso2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam velit quia hic beatae dicta ipsum eum voluptatibus sed, corrupti quis recusandae sapiente mollitia odit? Quo accusantium quis amet? Voluptates, tempore!</h3>
+              <p class="csso3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore natus enim voluptatem, odit illum optio ipsa laboriosam error et voluptate nesciunt adipisci tempore deserunt itaque, quae quis, animi magnam molestias!</p>
+            </fieldset>
+              </fieldset>
+              <fieldset>
+                <legend>1.2.3. CSS Трансформація (перетворення) тексту</legend>
+                  <fieldset>
+                    <style>
+                      p.uppercase {
+                        text-transform: uppercase;
+                      }
+                      
+                      p.lowercase {
+                        text-transform: lowercase;
+                      }
+                      
+                      p.capitalize {
+                        text-transform: capitalize;
+                      }
+                      </style>
+                      
+                      
+                      <p class="uppercase">Это какой-то текст.</p>
+                      <p class="lowercase">Это какой-то текст.</p>
+                      <p class="capitalize">Это какой-то текст.</p>
+                  </fieldset>
+                </fieldset>
+                <fieldset>
+                  <legend>1.2.4. CSS Інтервал тексту.</legend>
+                    <fieldset>
+                      <style>
+                        p.small {
+                          line-height: 0.7;
+                        }
+                        
+                        p.big {
+                          line-height: 1.8;
+                        }
+                        </style>
+                        </head>
+                        <body>
+                        
+                        <p>Это параграф со стандартной высотой строки.<br>
+                        Высота строки по умолчанию в большинстве браузеров составляет от 110% до 120%.<br></p>
+                        
+                        <p class="small">Это параграф с меньшей высотой строки.<br>
+                        Это параграф с меньшей высотой строки.<br>
+                        </p>
+                        
+                        <p class="big">Это параграф с большей высотой строки.<br>
+                        Это параграф с большей высотой строки.<br></p>
+                    </fieldset>
+                  </fieldset>
+                  <fieldset>
+                    <legend>1.2.5. CSS Тінь тексту.</legend>
+                      <fieldset>
+                        <style>
+                          h1.st125 {
+                            text-shadow: 2px 2px 5px red;
+                          }
+                          </style>
+                          </head>
+                          <body>
+                          
+                          <h1 class="st125">Эффект тени текста!</h1>
+                          
+                      </fieldset>
+                    </fieldset>
+                    <fieldset>
+                      <legend>1.3. CSS Шрифти.</legend>
+                        <fieldset>
+                          <style>
+                            .p1 {
+                              font-family: "Times New Roman", Times, serif;
+                            }
+                            
+                            .p2 {
+                              font-family: Arial, Helvetica, sans-serif;
+                            }
+                            
+                            .p3 {
+                              font-family: "Lucida Console", "Courier New", monospace;
+                            }
+                            </style>
+                            </head>
+                            <body>
+                            
+                            <h1>CSS font-family</h1>
+                            <p class="p1">Этот параграф выделен шрифтом Times New Roman.</p>
+                            <p class="p2">Этот параграф выделен шрифтом Arial.</p>
+                            <p class="p3">Этот параграф выделен шрифтом Lucida Console.</p>
+                            
+                        </fieldset>
+                      </fieldset>
+                      <fieldset>
+                        <legend>1.3.1. CSS Веб-безпечні шрифти.</legend>
+                          <fieldset>
+                            <style>
+                              .times {
+                                font-family: 'Times New Roman', serif;
+                              }
+                              </style>
+                              </head>
+                              <body>
+                              
+                              <h1 class="times">Lorem ipsum dolor sit amet</h1>
+                              
+                              <p class="times">Lorem ipsum dolor sit amet.</p>
+                              <p class="times">0 1 2 3 4 5 6 7 8 9</p>
+                          </fieldset>
+                        </fieldset>
+                        <fieldset>
+                          <legend>1.3.2. CSS Запасні (резервні) шрифти.</legend>
+                            <fieldset>
+                              <style>
+                                .fant {
+                                  font-family: Copperplate, Papyrus, fantasy;
+                                }
+                                </style>
+                                </head>
+                                <body>
+                                
+                                <h1 class="fant">Lorem ipsum dolor sit amet</h1>
+                                
+                                <p class="fant">Lorem ipsum dolor sit amet.</p>
+                                <p class="fant">0 1 2 3 4 5 6 7 8 9</p>
+                            </fieldset>
+                          </fieldset>
+                          <fieldset>
+                            <legend>1.3.3. CSS Стиль шрифту.</legend>
+                              <fieldset>
+                                <style>
+                                  p.normal {
+                                    font-style: normal;
+                                  }
+                                  
+                                  p.italic {
+                                    font-style: italic;
+                                  }
+                                  
+                                  p.oblique {
+                                    font-style: oblique;
+                                  }
+                                  </style>
+                                  </head>
+                                  <body>
+                                  
+                                  <p class="normal">Это параграф в обычном стиле.</p>
+                                  <p class="italic">Это параграф курсивом.</p>
+                                  <p class="oblique">Это параграф наклонным стилем.</p>
+                              </fieldset>
+                            </fieldset>
+                            <fieldset>
+                              <legend>1.3.4. CSS Розмір шрифту.</legend>
+                                <fieldset>
+                                  <style>
+                                    body.a100 {
+                                      font-size: 100%;
+                                    }
+                                    
+                                    h1.a25 {
+                                      font-size: 2.5em;
+                                    }
+                                    
+                                    h2.a18 {
+                                      font-size: 1.875em;
+                                    }
+                                    
+                                    p.a08 {
+                                      font-size: 0.875em;
+                                    }
+                                    </style>
+                                    
+                                    
+                                    <h1 class="a100">Это заголовок 1</h1>
+                                    <h2 class="a25">Это параграф 2</h2>
+                                    <p class="a18">Это параграф.</p>
+                                    <p class="a08">Указание размера шрифта в процентах и em отображает одинаковый размер во всех основных браузерах и позволяет всем браузерам изменять размер текста!</p>
+                                    
+                                    
+                                </fieldset>
+                              </fieldset>
+                              <fieldset>
+                                <legend>1.3.6. CSS Google шрифти.</legend>
+                                  <fieldset>
+                                    <style>
+                                      .sofia {
+                                        font-family: "Sofia", sans-serif;
+                                      }
+                                      </style>
+                                     
+                                      
+                                      <h1 class="sofia">Sofia шрифт</h1>
+                                      <p class="sofia">Lorem ipsum dolor sit amet.</p>
+                                      <p class="sofia">123456790</p>
+                                  </fieldset>
+                                </fieldset>
+                                <fieldset>
+                                  <legend>1.3.7. CSS Гарні комбінації шрифтів.</legend>
+                                    <fieldset>
+                                      <style>
+                                        .noto {
+                                          font-family: "Noto Sans", sans-serif;
+                                          font-size: 16px;
+                                        }
+                                        
+                                        .oswal {
+                                          font-family: "Oswald", sans-serif;
+                                          font-size: 46px;
+                                        }
+                                        </style>
+                                        </head>
+                                        <body>
+                                        
+                                        <h1 class="oswal">Прекрасная Норвегия</h1>
+                                        
+                                        <p class="noto">Норвегия имеет общую площадь 385 252 квадратных километров и население 5 438 657 человек (декабрь 2020 г.). Норвегия граничит с Швецией, Финляндией и Россией на северо-востоке, а Скагеррак - на юге, с Данией на другой стороне.</p>
+                                        
+                                        <p class="noto">В Норвегии красивые горы, ледники и потрясающие фьорды. Осло, столица, - это город зеленых насаждений и музеев. Берген с красочными деревянными домами является отправной точкой для круизов по впечатляющему Согне-фьорду. Норвегия также известна рыбной ловлей, пешим туризмом и лыжным спортом.</p>
+                                    </fieldset>
+                                  </fieldset>
+                                  <fieldset>
+                                    <legend>1.3.8. CSS Шрифт. Скорочена властивість.</legend>
+                                      <fieldset>
+                                        <style>
+                                          p.ar {
+                                            font: 20px Arial, sans-serif;
+                                          }
+                                          p.br {
+                                            font: italic bold 12px/30px Georgia, serif;
+                                          }
+                                          </style>
+                                         
+                                          
+                                          <h1>Свойство font</h1>
+                                          
+                                          <p class="ar">Это параграф. Размер шрифта установлен на 20 пикселей, семейство шрифтов - Arial.</p>
+                                          
+                                          <p class="br">Это параграф. Шрифт выделен курсивом и полужирным шрифтом, размер шрифта - 12 пикселей, высота строки - 30 пикселей, семейство шрифтов - Georgia.</p>
+                                          
+                                      </fieldset>
+                                    </fieldset>
+                                    <fieldset>
+                                      <legend>1.4.1. Макет CSS – властивість відображення.</legend>
+                                        <fieldset>
+                                          <style>
+                                            li.in {
+                                              display: inline;
+                                            }
+                                            </style>
+                                            </head>
+                                            <body>
+                                            
+                                            <p>Display a list of links as a horizontal menu:</p>
+                                            
+                                            <ul>
+                                              <li class="in"><a href="/html/default.asp" target="_blank">HTML</a></li>
+                                              <li class="in"><a href="/css/default.asp" target="_blank">CSS</a></li>
+                                              <li class="in"><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+                                            </ul>
+                                            
+                                        </fieldset>
+                                      </fieldset>
+                                      <fieldset>
+                                        <legend>1.4.2. Макет CSS - ширина та максимальна ширина.</legend>
+                                          <fieldset>
+                                            <style>
+                                              div.ex1r {
+                                                width: 500px;
+                                                margin: auto;
+                                                border: 3px solid #73AD21;
+                                              }
+                                              
+                                              div.ex2r {
+                                                max-width: 500px;
+                                                margin: auto;
+                                                border: 3px solid #73AD21;
+                                              }
+                                              </style>
+                                              </head>
+                                              <body>
+                                              
+                                              <h2>CSS Max-width</h2>
+                                              
+                                              <div class="ex1r">This div element has width: 500px;</div>
+                                              <br>
+                                              
+                                              <div class="ex2r">This div element has max-width: 500px;</div>
+                                              
+                                              <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+                                              the two divs!</p>
+                                          </fieldset>
+                                        </fieldset>
+                                        <fieldset>
+                                          <legend>1.4.3. CSS Layout – властивість position.</legend>
+                                            <fieldset>
+                                              <style>
+                                                div.relative {
+                                                  position: relative;
+                                                  width: 400px;
+                                                  height: 200px;
+                                                  border: 3px solid #73AD21;
+                                                } 
+                                                
+                                                div.absolute {
+                                                  position: absolute;
+                                                  top: 80px;
+                                                  right: 0;
+                                                  width: 200px;
+                                                  height: 100px;
+                                                  border: 3px solid #73AD21;
+                                                }
+                                                </style>
+                                               
+                                                
+                                                <h2>position: absolute;</h2>
+                                                
+                                                <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+                                                
+                                                <div class="relative">This div element has position: relative;
+                                                  <div class="absolute">This div element has position: absolute;</div>
+                                                </div>
+                                            </fieldset>
+                                          </fieldset>
+                                          <fieldset>
+                                            <legend>1.4.4. Макет CSS – властивість z-index.</legend>
+                                              <fieldset>
+                                                <style>
+                                                  .containert {
+                                                    position: relative;
+                                                  }
+                                                  
+                                                  .black-box {
+                                                    position: relative;
+                                                    border: 2px solid black;
+                                                    height: 100px;
+                                                    margin: 30px;
+                                                  }
+                                                  
+                                                  .gray-box {
+                                                    position: absolute;
+                                                    background: lightgray;
+                                                    height: 60px;  
+                                                    width: 70%;
+                                                    left: 50px;
+                                                    top: 50px;
+                                                  }
+                                                  
+                                                  .green-box {
+                                                    position: absolute;
+                                                    background: lightgreen;
+                                                    width: 35%;
+                                                    left: 270px;
+                                                    top: -15px;
+                                                    height: 100px;
+                                                  }
+                                                  </style>
+                                                  </head>
+                                                  <body>
+                                                  
+                                                  <h1>Overlapping elements</h1>
+                                                  
+                                                  <p>If two positioned elements overlap each other without a z-index specified,
+                                                  the element defined last in the HTML code will be shown on top:</p>
+                                                  
+                                                  <div class="containert">
+                                                    <div class="black-box">Black box</div>
+                                                    <div class="gray-box">Gray box</div>
+                                                    <div class="green-box">Green box</div>
+                                                  </div>
+                                              </fieldset>
+                                            </fieldset>
+                                            <fieldset>
+                                              <legend>1.4.5. Макет CSS – переповнення.</legend>
+                                                <fieldset>
+                                                  <style>
+                                                    div.over {
+                                                      background-color: coral;
+                                                      width: 200px;
+                                                      height: 65px;
+                                                      border: 1px solid black;
+                                                      overflow-x: hidden;
+                                                      overflow-y: scroll;
+                                                    }
+                                                    </style>
+                                                    </head>
+                                                    <body>
+                                                    
+                                                    <h2>Overflow-x and overflow-y</h2>
+                                                    
+                                                    <p>You can also change the overflow of content horizontally or vertically.</p>
+                                                    <p>overflow-x specifies what to do with the left/right edges of the content.</p>
+                                                    <p>overflow-y specifies what to do with the top/bottom edges of the content.</p>
+                                                    
+                                                    <div class="over">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+                                                </fieldset>
+                                              </fieldset>
+                                              <fieldset>
+                                                <legend>1.4.6. Макет CSS - плаваючий і очищений.</legend>
+                                                  <fieldset>
+                                                    <style>
+                                                      
+                                                      
+                                                      .div1r {
+                                                        background: red;
+                                                        float: left;
+                                                        padding: 15px; 
+                                                      }
+                                                      
+                                                      .div2r {
+                                                        background: yellow;
+                                                        float: left;
+                                                        padding: 15px; 
+                                                      }
+                                                      
+                                                      .div3r {
+                                                        background: green;
+                                                        float: left;
+                                                        padding: 15px; 
+                                                      }
+                                                      </style>
+                                                      </head>
+                                                      <body>
+                                                      
+                                                      <h2>Float Next To Each Other</h2>
+                                                      
+                                                      <p>In this example, the three divs will float next to each other.</p>
+                                                      
+                                                      <div class="div1r">Div 1</div>
+                                                      <div class="div2r">Div 2</div>
+                                                      <div class="div3r">Div 3</div>
+                                                  </fieldset>
+                                                </fieldset>
+                                                <fieldset>
+                                                  <legend>1.4.7. Розмітка CSS.</legend>
+                                                    <fieldset>
+                                                      <style>
+                                                        .div1t {
+                                                          float: left;
+                                                          padding: 10px;
+                                                          border: 3px solid #73AD21;
+                                                        }
+                                                        
+                                                        .div2t {
+                                                          padding: 10px;
+                                                          border: 3px solid red;
+                                                        }
+                                                        
+                                                        .div3t {
+                                                          float: left;
+                                                          padding: 10px;  
+                                                          border: 3px solid #73AD21;
+                                                        }
+                                                        
+                                                        .div4t {
+                                                          padding: 10px;
+                                                          border: 3px solid red;
+                                                          clear: left;
+                                                        }
+                                                        </style>
+                                                        </head>
+                                                        <body>
+                                                        
+                                                        <h2>Without clear</h2>
+                                                        <div class="div1t">div1</div>
+                                                        <div class="div2t">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+                                                        <br><br>
+                                                        
+                                                        <h2>With clear</h2>
+                                                        <div class="div3t">div3</div>
+                                                        <div class="div4t">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+                                                    </fieldset>
+                                                  </fieldset>
+                                                  <fieldset>
+                                                    <legend>1.4.8. Макет CSS – приклади Float.</legend>
+                                                      <fieldset>
+                                                        <style>
+                                                         
+                                                          
+                                                          .box {
+                                                            float: left;
+                                                            width: 33.33%;
+                                                            padding: 50px;
+                                                            box-sizing: border-box;
+                                                          }
+                                                          
+                                                          .clearfix::after {
+                                                            content: "";
+                                                            clear: both;
+                                                            display: table;
+                                                          }
+                                                          </style>
+                                                          </head>
+                                                          <body>
+                                                          
+                                                          <h2>Grid of Boxes</h2>
+                                                          <p>Float boxes side by side:</p>
+                                                          
+                                                          <div class="clearfix">
+                                                            <div class="box" style="background-color:#bbb">
+                                                            <p>Some text inside the box.</p>
+                                                            </div>
+                                                            <div class="box" style="background-color:#ccc">
+                                                            <p>Some text inside the box.</p>
+                                                            </div>
+                                                            <div class="box" style="background-color:#ddd">
+                                                            <p>Some text inside the box.</p>
+                                                            </div>
+                                                          </div>
+                                                      </fieldset>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                      <legend>2.1. 2D трансформації CSS.</legend>
+                                                        <fieldset>
+                                                          <style>
+                                                            div#myDiv1 {
+                                                              width: 300px;
+                                                              height: 100px;
+                                                              background-color: yellow;
+                                                              border: 1px solid black;
+                                                            }
+                                                            
+                                                            div#myDiv2 {
+                                                              transform: matrix(1, -0.3, 0, 1, 0, 0);
+                                                              width: 300px;
+                                                              height: 100px;
+                                                              background-color: yellow;
+                                                              border: 1px solid black;
+                                                            }
+                                                            
+                                                            
+                                                            div#myDiv3 {
+                                                              transform: matrix(1, 0, 0.5, 1, 150, 0);
+                                                              width: 300px;
+                                                              height: 100px;
+                                                              background-color: yellow;
+                                                              border: 1px solid black;
+                                                            }
+                                                            
+                                                            </style>
+                                                            </head>
+                                                            <body>
+                                                            
+                                                            <h1>The matrix() Method</h1>
+                                                            
+                                                            <p>The matrix() method combines all the 2D transform methods into one.</p>
+                                                            
+                                                            <div id="myDiv1">
+                                                            This a normal div element.
+                                                            </div>
+                                                            
+                                                            <div id="myDiv2">
+                                                            Using the matrix() method.
+                                                            </div>
+                                                            
+                                                            <div id="myDiv3">
+                                                            Another use of the matrix() method.
+                                                            </div>
+                                                        </fieldset>
+                                                      </fieldset>
+                                                      <fieldset>
+                                                        <legend>2.2. 3D-перетворення CSS.</legend>
+                                                          <fieldset>
+                                                            <style>
+                                                              .div444 {
+                                                                width: 300px;
+                                                                height: 100px;
+                                                                background-color: yellow;
+                                                                border: 1px solid black;
+                                                              }
+                                                              
+                                                              .div1111 {
+                                                                transform: rotateX(150deg);
+                                                                width: 300px;
+                                                                height: 100px;
+                                                                background-color: yellow;
+                                                                border: 1px solid black;
+                                                              }
+                                                              </style>
+                                                              </head>
+                                                              <body>
+                                                              
+                                                              <h1>The rotateX() Method</h1>
+                                                              
+                                                              <p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
+                                                              
+                                                              <div class="div444">
+                                                              This a normal div element.
+                                                              </div>
+                                                              
+                                                              <div class="div1111" >
+                                                              This div element is rotated 150 degrees.
+                                                              </div>
+                                                          </fieldset>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                          <legend>2.3. Зображення стилів CSS.</legend>
+                                                            <fieldset>
+                                                              <style>
+                                                                img {
+                                                                  border: 1px solid #ddd;
+                                                                  border-radius: 4px;
+                                                                  padding: 5px;
+                                                                  width: 150px;
+                                                                }
+                                                                
+                                                                img:hover {
+                                                                  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+                                                                }
+                                                                </style>
+                                                                </head>
+                                                                <body>
+                                                                
+                                                                <h2>Thumbnail Image as Link</h2>
+                                                                
+                                                                <p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+                                                                <p>Hover over the image and click on it to see the effect.</p>
+                                                                
+                                                                <a target="_blank" href="/img/foto.jpg">
+                                                                  <img src="img/foto.jpg" alt="Paris" style="width:150px">
+                                                                </a>
+                                                            </fieldset>
+                                                          </fieldset>
+                                                          <fieldset>
+                                                            <legend>2.4. CSS Image Reflection.</legend>
+                                                              <fieldset>
+                                                                <style>
+                                                                  img#img22 {
+                                                                    -webkit-box-reflect: right 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+                                                                  
+                                                                  }
+                                                                  </style>
+                                                                  </head>
+                                                                  <body>
+                                                                  
+                                                                  <h1>CSS Image Reflection</h1>
+                                                                  
+                                                                  <p>Show the reflection with gradient (to make a fade-out effect):</p>
+                                                                  <img id="img22" src="img/foto.jpg">
+                                                              </fieldset>
+                                                            </fieldset>
+                                                            <fieldset>
+                                                              <legend>2.5. CSS Властивість підгонки об’єкта.</legend>
+                                                                <fieldset>
+                                                                  <style>
+                                                                    img#img44 {
+                                                                      width: 200px;
+                                                                      height: 300px;
+                                                                      object-fit: fill;
+                                                                    }
+                                                                    </style>
+                                                                    </head>
+                                                                    <body>
+                                                                    
+                                                                    <h2>Using object-fit: fill</h2>
+                                                                    
+                                                                    <img id="img44" src="img/foto.jpg" alt="Paris" width="400" height="300">
+                                                                    
+                                                                </fieldset>
+                                                              </fieldset>
+                                                              <fieldset>
+                                                                <legend>2.6. CSS Властивість object-position.</legend>
+                                                                  <fieldset>
+                                                                    <style>
+                                                                      img#imgpos {
+                                                                        width: 200px;
+                                                                        height: 300px;
+                                                                        object-fit: cover;
+                                                                        object-position: 80% 100%;
+                                                                      }
+                                                                      </style>
+                                                                      </head>
+                                                                      <body>
+                                                                      
+                                                                      <h2>Using object-position</h2>
+                                                                      
+                                                                      <p>Here we will use the object-position property to position the image so that the great old building is in center:</p>
+                                                                      
+                                                                      <img id="imgpos" src="img/foto.jpg" alt="Paris" width="400" height="300">
+                                                                  </fieldset>
+                                                                </fieldset>
+                                                                <fieldset>
+                                                                  <legend>2.7. Маскування CSS.</legend>
+                                                                    <fieldset>
+                                                                  
+                                                                    </fieldset>
+                                                                  </fieldset><fieldset>
+                                                                    <legend>1.1. CSS Контур</legend>
+                                                                      <fieldset>
+                                                                        <style>
+                                                                          .mask1 {
+                                                                            -webkit-mask-image: url(img/pngwing.com.png);
+                                                                            mask-image: url(img/pngwing.com.png);
+                                                                            -webkit-mask-repeat: no-repeat;
+                                                                            mask-repeat: no-repeat;    
+                                                                          }
+                                                                          </style>
+                                                                          </head>
+                                                                          <body>
+                                                                          
+                                                                          <h1>The mask-image Property</h1>
+                                                                          
+                                                                          <h3>An image with a mask layer image:</h3>
+                                                                          <div class="mask1">
+                                                                          <img src="img/foto.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                          </div>
+                                                                          
+                                                                          <h3>Original image:</h3>
+                                                                          <img src="img/foto.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                      </fieldset>
+                                                                    </fieldset><fieldset>
+                                                                      <legend>2.8. Розмір блоку CSS.</legend>
+                                                                        <fieldset>
+                                                                          <style> 
+                                                                            .div1h {
+                                                                              width: 300px;
+                                                                              height: 100px;
+                                                                              border: 1px solid blue;
+                                                                              box-sizing: border-box;
+                                                                            }
+                                                                            
+                                                                            .div2h {
+                                                                              width: 300px;
+                                                                              height: 100px;  
+                                                                              padding: 50px;
+                                                                              border: 1px solid red;
+                                                                              box-sizing: border-box;
+                                                                            }
+                                                                            </style>
+                                                                            </head>
+                                                                            <body>
+                                                                            
+                                                                            <h1>With box-sizing</h1>
+                                                                            
+                                                                            <div class="div1h">Both divs are the same size now!</div>
+                                                                            <br>
+                                                                            <div class="div2h">Hooray!</div>
+                                                                        </fieldset>
+                                                                      </fieldset><fieldset>
+                                                                        <legend>2.9. Медіа-запити CSS.</legend>
+                                                                          <fieldset>
+                                                                            <style>
+                                                                              .wrapper {overflow: auto;}
+                                                                              
+                                                                              #main {margin-left: 4px;}
+                                                                              
+                                                                              #leftsidebar {
+                                                                                float: none;
+                                                                                width: auto;
+                                                                              }
+                                                                              
+                                                                              #menulist {
+                                                                                margin: 0;
+                                                                                padding: 0;
+                                                                              }
+                                                                              
+                                                                              .menuitem {
+                                                                                background: #CDF0F6;
+                                                                                border: 1px solid #d4d4d4;
+                                                                                border-radius: 4px;
+                                                                                list-style-type: none;
+                                                                                margin: 4px;
+                                                                                padding: 2px;
+                                                                              }
+                                                                              
+                                                                              @media screen and (min-width: 480px) {
+                                                                                #leftsidebar {width: 200px; float: left;}
+                                                                                #main {margin-left: 216px;}
+                                                                              }
+                                                                              </style>
+                                                                              </head>
+                                                                              <body>
+                                                                              
+                                                                              <div class="wrapper">
+                                                                                <div id="leftsidebar">
+                                                                                  <ul id="menulist">
+                                                                                    <li class="menuitem">Menu-item 1</li>
+                                                                                    <li class="menuitem">Menu-item 2</li>
+                                                                                    <li class="menuitem">Menu-item 3</li>
+                                                                                    <li class="menuitem">Menu-item 4</li>
+                                                                                    <li class="menuitem">Menu-item 5</li>
+                                                                                  </ul>
+                                                                                </div>
+                                                                                
+                                                                                <div id="main">
+                                                                                  <h1>Resize the browser window to see the effect!</h1>
+                                                                                  <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+                                                                                </div>
+                                                                              </div>
+                                                                          </fieldset>
+                                                                        </fieldset><fieldset>
+                                                                          <legend>2.10. CSS Flexbox.</legend>
+                                                                            <fieldset>
+                                                                              <style>
+                                                                                .flex-container {
+                                                                                  display: flex;
+                                                                                  background-color: DodgerBlue;
+                                                                                }
+                                                                                
+                                                                                .flex-container > div {
+                                                                                  background-color: #f1f1f1;
+                                                                                  margin: 10px;
+                                                                                  padding: 20px;
+                                                                                  font-size: 30px;
+                                                                                }
+                                                                                </style>
+                                                                                </head>
+                                                                                <body>
+                                                                                
+                                                                                <h1>Create a Flex Container</h1>
+                                                                                
+                                                                                <div class="flex-container">
+                                                                                  <div>1</div>
+                                                                                  <div>2</div>
+                                                                                  <div>3</div>  
+                                                                                </div>
+                                                                                
+                                                                                <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+                                                                                
+                                                                                <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+                                                                            </fieldset>
+                                                                          </fieldset><fieldset>
+                                                                            <legend>2.11. CSS Flex Container.</legend>
+                                                                              <fieldset>
+                                                                                <style>
+                                                                                  .flex-container2 {
+                                                                                    display: flex;
+                                                                                    flex-direction: column;
+                                                                                    background-color: DodgerBlue;
+                                                                                  }
+                                                                                  
+                                                                                  .flex-container2 > div {
+                                                                                    background-color: #f1f1f1;
+                                                                                    width: 100px;
+                                                                                    margin: 10px;
+                                                                                    text-align: center;
+                                                                                    line-height: 75px;
+                                                                                    font-size: 30px;
+                                                                                  }
+                                                                                  </style>
+                                                                                  </head>
+                                                                                  <body>
+                                                                                  
+                                                                                  <h1>The flex-direction Property</h1>
+                                                                                  
+                                                                                  <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+                                                                                  
+                                                                                  <div class="flex-container2">
+                                                                                    <div>1</div>
+                                                                                    <div>2</div>
+                                                                                    <div>3</div>  
+                                                                                  </div>the flexible container automatically becomes flexible items.</p>
+                                                                              </fieldset>
+                                                                            </fieldset><fieldset>
+                                                                              <legend>2.12. Елементи CSS Flex.</legend>
+                                                                                <fieldset>
+                                                                                  <style>
+                                                                                    .flex-container3 {
+                                                                                      display: flex;
+                                                                                      align-items: stretch;
+                                                                                      background-color: #f1f1f1;
+                                                                                    }
+                                                                                    
+                                                                                    .flex-container3 > div {
+                                                                                      background-color: DodgerBlue;
+                                                                                      color: white;
+                                                                                      margin: 10px;
+                                                                                      text-align: center;
+                                                                                      line-height: 75px;
+                                                                                      font-size: 30px;
+                                                                                    }
+                                                                                    </style>
+                                                                                    </head>
+                                                                                    <body>
+                                                                                    
+                                                                                    <h1>The flex-grow Property</h1>
+                                                                                    
+                                                                                    <p>Make the third flex item grow eight times faster than the other flex items:</p>
+                                                                                    
+                                                                                    <div class="flex-container3">
+                                                                                      <div style="flex-grow: 1">1</div>
+                                                                                      <div style="flex-grow: 1">2</div>
+                                                                                      <div style="flex-grow: 8">3</div>
+                                                                                    </div>
+                                                                                </fieldset>
+                                                                              </fieldset><fieldset>
+                                                                                <legend>1.1. CSS Контур</legend>
+                                                                                  <fieldset>
+                                                                                
+                                                                                  </fieldset>
+                                                                                </fieldset><fieldset>
+                                                                                  <legend>1.1. CSS Контур</legend>
+                                                                                    <fieldset>
+                                                                                  
+                                                                                    </fieldset>
+                                                                                  </fieldset><fieldset>
+                                                                                    <legend>1.1. CSS Контур</legend>
+                                                                                      <fieldset>
+                                                                                    
+                                                                                      </fieldset>
+                                                                                    </fieldset><fieldset>
+                                                                                      <legend>1.1. CSS Контур</legend>
+                                                                                        <fieldset>
+                                                                                      
+                                                                                        </fieldset>
+                                                                                      </fieldset><fieldset>
+                                                                                        <legend>1.1. CSS Контур</legend>
+                                                                                          <fieldset>
+                                                                                        
+                                                                                          </fieldset>
+                                                                                        </fieldset><fieldset>
+                                                                                          <legend>1.1. CSS Контур</legend>
+                                                                                            <fieldset>
+                                                                                          
+                                                                                            </fieldset>
+                                                                                          </fieldset><fieldset>
+                                                                                            <legend>1.1. CSS Контур</legend>
+                                                                                              <fieldset>
+                                                                                            
+                                                                                              </fieldset>
+                                                                                            </fieldset><fieldset>
+                                                                                              <legend>1.1. CSS Контур</legend>
+                                                                                                <fieldset>
+                                                                                              
+                                                                                                </fieldset>
+                                                                                              </fieldset>
 </body>
 </html>
